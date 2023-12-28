@@ -1,0 +1,36 @@
+/*loading animation*/
+header:before{ 
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 0; 
+  top: 0;
+  height: 0.2em;
+  width: 100%;
+  background: linear-gradient(90deg, var(--active), var(--done));
+  z-index: 1000;  
+  opacity: 0.6;
+}
+header:after{ 
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  height: 0.2em;
+  width: 100%;
+  left: -100%;
+  background: linear-gradient(90deg, var(--active), var(--done));
+  animation: loading_futurev 1s linear infinite;
+  animation-delay: 0s;
+  z-index: 1000;
+}
+@keyframes loading_futurev
+{
+   0%
+   {
+    left: -100%;
+   }
+   100%{
+    left: 100%;
+   }
+}

@@ -1,0 +1,182 @@
+section [class="container"]{
+/*	position: absolute;*/
+/*  height: 100%;*/
+  width: 100%;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+.content{
+	top: 10%;
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+}
+.video-cover{	
+	position: absolute;
+	height: 440px;
+	width: 780px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	margin: 30px 40px;
+/*	margin-left: -450px;*/
+}
+video::-webkit-media-controls {
+  display: none;
+  }
+video{
+	position: absolute;
+  clip-path: polygon(0% 13%, 2% 10%, 2% 6%,	4% 2%, 9% 2%, 11% 0%, 39% 0%, 40% 1%, 49% 1%, 50% 0%, 72% 0%, 74% 2%, 84% 2%, 100% 31%, 100% 100%, 100% 100%, 50% 100%, 49% 99%, 40% 99%, 39% 100%, 18% 100%, 14% 93%, 5% 92%, 1% 84%, 1% 55%, 0% 53%);
+}
+.video-cover::before{
+	content: "";
+	position: absolute;
+	height: 440px;
+	width: 780px;
+	backdrop-filter: blur(10px);
+	background: #cad9f13b;
+	border: 2px solid #b5c2d56e;
+  clip-path: polygon(7% 100%, 0% 85%, 0 3%, 2% 0, 83% 0, 100% 31%, 100% 100%);
+	}
+.video-cover::after{
+	content: "";
+	position: absolute;
+	height: 440px;
+	width: 780px;
+	backdrop-filter: blur(10px);
+	background: #cad9f13b;
+	border: 2px solid #b5c2d56e;
+  clip-path: polygon(84% 0, 100% 29%, 100% 14%, 92% 0);  
+}
+
+/*Content Information Box*/
+.content_info{
+	position: absolute;
+	height: 210px;
+	width: 792px;
+	bottom: 0;
+	margin-left: 30px;
+/*	border: 1px solid tomato;*/
+  overflow: hidden;
+  outline: none;
+
+}
+
+
+
+/*Content-Owner's Channel Information 
+(Logo/Name and Rate/Views)*/
+.channel_info{
+	position: relative;
+	height: 42px;
+	width: 50%;
+/*  border: 1px solid lime;*/
+}
+/*Wideo Content-Owner's Channel Info first box (Logo/Name)*/
+.fvc_info img{
+/*	Content-owner's Logo*/
+	   position: absolute;
+	   background: var(--clr);
+	   height: 40px;
+	   width: 40px;
+	   border-radius: 50%;
+	   overflow: hidden;
+	   cursor: pointer;
+}
+.fvc_info .c_name{
+/*Conent-Owner's Name*/
+	position: absolute;
+	color: var(--tclr);
+	margin: 8px 60px;
+	font-family: sans-serif;
+
+}
+/*Wideo Content-Owner's Channel Info second box (Rate/Views)*/
+.v_rate{
+	position: absolute;
+	height: 42px;
+	width: 101%;
+/*  border: 1px solid lime;*/
+  transform: translate(99%);
+  top: -3%;
+  display: flex;
+  align-items: center;
+}
+.rate_up, .rate_down{
+/*	Like and UnLike*/
+	position: relative;
+	color: var(--tclr);
+	font-family: sans-serif;
+	font-size: 20px;
+	margin: 20px;
+	cursor: pointer;
+}
+.rate_up:hover{
+/*	Like Video*/
+	color: var(--active);
+}
+.rate_down:hover{
+/*	Unlike Video*/
+	color: var(--warrning);
+}
+.views{
+/*	Video Views*/
+	color: var(--tclr);
+	font-family: sans-serif;
+	font-size: 17px;
+	font-weight: bold;
+	margin: 20px;
+}
+.v_title{
+	height: 25px;
+	width: 100%;
+/*	background: red;*/
+  margin-top: 20px;
+	margin-left: 60px;
+	color: var(--text);
+	font-family: sans-serif;
+}
+.v_description{
+	color: var(--texta);
+	font-size: 19px;
+/*	letter-spacing: 1px;*/
+	font-family: sans-serif;
+	margin: 22px 8px;
+/*	background: transparent;*/
+	background: var(--textarea);
+
+	padding: 1px 10px;
+  height: 100px;
+  width: 99%;
+overflow-X: hidden;
+}
+.comment_box{
+	position: absolute;
+	height: 140px;
+	width: 788px;
+	bottom: -22%;
+/*	background: red;*/
+	margin-left: 35px;
+	overflow: hidden;
+}
+h3{
+	color: var(--tclr);
+	font-weight: bold;
+	font-size: 20px;
+	font-family: sans-serif;
+	margin: 0px 10px;
+}
+.v_comment{
+	color: var(--text);
+	font-size: 19px;
+	font-family: sans-serif;
+	margin: 5px 5px;
+  outline: none;
+	background: var(--textarea);
+	padding: 7px 7px;
+  height: 100px;
+  width: 99%;
+  padding: 14px 15px;
+  letter-spacing: 1px;
+}

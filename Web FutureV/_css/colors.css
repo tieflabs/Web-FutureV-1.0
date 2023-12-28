@@ -1,0 +1,36 @@
+:root{
+  --bg: #101018;
+  --bga: #121517;
+  --bbg:#031c32;
+  --bbx: #303445;
+
+  --vid_bg: #cad9f13b;
+  --vid_bd: #0046aa7a;
+
+  
+  --unactive: #0056ea7a;
+  --active: #0185fa;
+  --warrning: crimson;
+  --done: lime;
+  --skyblue: skyblue;
+
+  --clr: #184ff1;
+  --tclr: #8cb3d6;
+  --texta: #b4bee76b;
+  --textb: #9ba4c8;
+  --text: lavender;
+  --white: #ffffff;
+  --link: #7cacf8;
+
+  --textarea: #242429;
+
+  --user-txt-ico: #bb8e4b;
+  --user-bg-ico: #efddbc;
+  
+}
+html, body{
+  background: var(--bga);
+  color: var(--text);
+  font-family: sans-serif;
+
+}

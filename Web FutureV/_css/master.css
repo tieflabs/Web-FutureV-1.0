@@ -1,0 +1,107 @@
+section[class="futurev_videos_section"]{
+  position: absolute;
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+/*  background: lime;*/
+  overflow-y: hidden;
+}
+.content_box{
+  position: relative;
+  height: 220px;
+  width: 320px;
+  margin: 30px;
+  border: 2px dashed var(--clr);
+  border-radius: 10px;
+  display: flex;
+/*  background: red;*/
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+  scale: 80%;
+  margin: 10px;
+}
+.video{
+  position: absolute;
+  height: 180px;
+  width: 300px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: var(--vid_bg);  
+  border: 2px solid var(--vid_bd);
+  backdrop-filter: blur(10px);
+  clip-path: polygon(0% 13%, 2% 10%, 2% 6%, 4% 2%, 9% 2%, 11% 0%, 39% 0%, 40% 1%, 49% 1%, 50% 0%, 72% 0%, 74% 2%, 84% 2%, 100% 31%, 100% 100%, 100% 100%, 50% 100%, 49% 99%, 40% 99%, 39% 100%, 18% 100%, 14% 93%, 5% 92%, 1% 84%, 1% 55%, 0% 53%);
+}
+.thumb{
+  position: absolute;
+  height: 180px;
+  width: 300px;
+/*  clip-path: polygon(7% 100%, 0% 85%, 0 3%, 2% 0, 83% 0, 100% 31%, 100% 100%);*/
+}
+.ttle{
+  position: absolute;
+  height: 20px;
+  width: 100%;
+  bottom: 1%;
+}
+h4{
+  position: absolute;
+  font-size: 13px;
+  outline: none;
+  margin-left: 11px;
+  color: gray;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.content_box:hover h4{
+  color: lavender;
+  
+}
+/*================*/
+.video:hover
+.play_button{
+  color: var(--white);
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background: var(--clr);
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.play_button:hover,
+.play_button:active
+ .play_ring{
+  position: absolute;
+  height: 58px;
+  width: 58px;
+  border-radius: 50px;
+  border: 1px solid var(--active);
+  box-shadow: #32c4ffe6 1px 0px 10px 4px,
+   inset #00a6ff 0px 1px 20px 0px;
+}
+.video:hover .play_icon{
+  position: absolute;
+  height: 20px;
+  width: 25px;
+  background: var(--white);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  user-select: none;
+  rotate: 90deg;
+}
+a{
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--active);
+}

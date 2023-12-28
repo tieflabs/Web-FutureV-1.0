@@ -1,0 +1,59 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+    width: auto;
+}
+body::-webkit-scrollbar{
+  width: 0.4em;
+  background: var(--bbg);
+}
+body::-webkit-scrollbar-track{
+  box-shadow: inset 0 0 6px var(--bga);
+}
+body::-webkit-scrollbar-thumb{
+background: #0056ea7a;
+opacity: 0;
+border-radius: 50px;
+}
+body::-webkit-scrollbar-thumb:hover{
+  background: var(--active);
+  border-radius: 50px;
+}
+/*Videos discription*/
+p::-webkit-scrollbar{
+  width: 0.4em;
+  background: var(--bbg);
+  cursor: pointer;
+}
+p::-webkit-scrollbar-track{
+  box-shadow: inset 0 0 6px var(--bga);
+}
+p::-webkit-scrollbar-thumb{
+background: #0056ea7a;
+opacity: 0;
+border-radius: 50px;
+}
+p::-webkit-scrollbar-thumb:hover{
+  background: var(--active);
+  border-radius: 50px;
+}
+/*Videos Comment*/
+textarea::-webkit-scrollbar{
+  width: 0.4em;
+  background: var(--bbg);
+}
+textarea::-webkit-scrollbar-track{
+  box-shadow: inset 0 0 6px var(--bga);
+}
+textarea::-webkit-scrollbar-thumb{
+background: #0056ea7a;
+opacity: 0;
+border-radius: 50px;
+}
+textarea::-webkit-scrollbar-thumb:hover{
+  background: var(--active);
+  border-radius: 50px;
+}
